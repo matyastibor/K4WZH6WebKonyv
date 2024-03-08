@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Mátyás Tibor</title>
+        <script src="Jquery/jquery-3.7.1.js" type="text/javascript"></script>        
+    </head>
+    <body>
+
+        <h1>jQuery feladatok</h1>
+
+        <p class="bekezdes"><b>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</b></p>
+        <p class="bekezdes">Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
+              
+        <ul>
+            <li>tíz</li>
+            <li>húsz</li>
+            <li>harminc</li>
+        </ul>
+		
+		<ul>
+            <li>tizedik</li>
+            <li>huszadik</li>
+            <li>harmincadik</li>
+        </ul>
+
+        <table>
+            <tr>
+                <td>1111</td>
+                <td>aaaaa</td>
+                <td>bbbbb</td>
+            </tr>
+            <tr>
+                <td>2222</td>
+                <td>aaaaa</td>
+                <td>bbbbb</td>
+            </tr>
+            <tr>
+                <td>3333</td>
+                <td>aaaaa</td>
+                <td>bbbbb</td>
+            </tr>
+            <tr>
+                <td>4444</td>
+                <td>aaaaa</td>
+                <td>bbbbb</td>
+            </tr>
+            <tr>
+                <td>5555</td>
+                <td>aaaaa</td>
+                <td>bbbbb</td>
+            </tr>
+        </table>
+
+        <button id="k1">Kattints ide_1!</button>
+        <button id="k2">Kattints ide_2!</button>
+        <button id="k3">Kattints ide_3!</button>
+        <button id="k4">Kattints ide_4!</button>
+        <button id="k5">Kattints ide_5!</button>
+
+        <br/>
+        <br/>
+        
+        <span>THE weboldal:</span> <a href="https://www.unithe.hu">Tokaj Hegyalja Egyetem</a>
+
+        <script>
+            $(document).ready(function(){
+
+              $("#k1").click(function(){
+                $("ul li:first").hide();
+                $("ul li:first-child").hide();
+                $("[href]").hide();
+              });
+
+              $("#k2").click(function(){
+                $("ul li:first").hide();
+                $("ul li:first-child").hide();
+                $("[href]").hide();
+                $(this).hide();
+              });
+
+              $("#k3").click(function(){
+                $("h1").hide();
+                $("ul li:first").hide();
+                $("ul li:first-child").hide();
+                $("[href]").hide();                
+              });
+
+              $("#k4").click(function(){
+                $("ul li:first").hide();
+                $("ul li:first-child").hide();
+                $("span").hide();
+                $("[href]").hide();                
+              });
+
+              $("#k5").click(function(){
+                $("ul li:first").hide();
+                $("ul li:first-child").hide();
+                $("[href]").hide();
+                $("table tr:odd").hide();                
+              });
+
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Mátyás Tibor</title>
+        <script src="Jquery/jquery-3.7.1.js" type="text/javascript"></script>        
+    </head>
+    <body>
+
+        <h1>jQuery feladatok</h1>
+
+        <p>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni. <b>Kattints ide</b>, és eltűnik!</p>
+        <p>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja. <b>Kattints ide duplán</b>, és eltűnik!</p>
+              
+        <b>Név:</b> <input type="text"><br/>
+        <br/>
+        <b>Email:</b> <input type="email"><br/>
+        <br/>
+        <b>Jelszó:</b> <input type="password"><br/>
+        <br/>
+        <button>Jelentkezés</button>
+        
+        
+
+        <script>
+            $(document).ready(function(){
+
+              $("h1").mouseout(function(){
+                alert("Ez a címsor volt!");
+              });
+
+              $("b").click(function(){
+                $(this).parent("p").hide();
+              });
+
+              $("button").mouseover(function(){
+                alert("Nyomható gomb ez ám!");
+              });
+
+              $("input").mouseover(function(){
+                $(this).css("border","2px inset red");
+              });
+
+              $("input").mouseout(function(){
+                $(this).css("border","2px inset black");
+              });
+
+              $("input").focus(function(){
+                $(this).css("background-color","lightblue");
+              });
+
+              $("input").blur(function(){
+                $(this).css("background-color","white");
+              });
+
+            });
+        </script>
+
+    </body>
+</html>
