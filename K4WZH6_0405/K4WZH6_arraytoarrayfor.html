@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JSON tömb bejárása 2 forciklussal</h3>
+
+    <div id="K4WZH6"></div>
+    
+<script>    
+    
+    let MtObj, i, j, x="";    
+
+    MtObj = {
+        "name":"MT",
+        "age":44,
+        "cars": [
+            {"name":"Toyota","models":["CHR","Corolla","Proace"]},
+            {"name":"Ford","models":["Kuga","Mondeo","Mustang"]},
+            {"name":"BMW","models":["320","X3","XS"]},
+            {"name":"Fiat","models":["500","Panda","Tipo"]}
+        ]
+    }    
+
+    for(i in MtObj.cars) { 
+         
+        x += "<h3>" + MtObj.cars[i].name + "</h3>";       
+       
+         for(j in MtObj.cars[i].models) {
+            x += MtObj.cars[i].models[j]+"<br>";            
+         } 
+
+    }     
+    
+    document.getElementById("K4WZH6").innerHTML = x; 
+
+</script>
+</body>
+</html>
