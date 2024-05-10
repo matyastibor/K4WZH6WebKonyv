@@ -1,0 +1,59 @@
+{
+    "kurzus": [
+        {
+            "targy":"Webkönyvtárak",
+            "idopont": {
+                "nap": "2024.05.10",
+                "tol": "09:00",
+                "ig": "12:30"
+            },
+            "helyszin": "Online",
+            "oktato": "Dr. Bednarik László",
+            "szak": "Programtervező informatikus",
+            "tipus": "Ea./Gyk."
+        },
+        {
+            "targy":"Kompjuteres grafika",
+            "idopont": {
+                "nap": "2024.05.10",
+                "tol": "12:30",
+                "ig": "15:30"
+            },
+            "helyszin": "Online",
+            "oktato": "Dr. Bednarik László",
+            "szak": "Programtervező informatikus",
+            "tipus": "Ea./Gyk."
+        },
+        {
+            "targy":"Kalkulus",
+            "idopont": {
+                "nap": "2024.04.15",
+                "tol": "12:30",
+                "ig": "15:30"
+            },
+            "helyszin": "Tetőtér 305",
+            "oktato": "Dr. Wiersumné dr. Gyöngyösi Erika",
+            "szak": "Programtervező informatikus",
+            "tipus": "Ea./Gyk."
+        }
+    ],
+
+    "cim": 
+    {
+        "iranyitoszam": 3900,
+        "varos": "Sárospatak",
+        "utca": "Eötvös utc 7."
+    },
+
+    "telefonszam":
+    [
+        {
+            "tipus": "Vezetékes",
+            "szam": "0647123456"
+        },
+        {
+            "tipus": "Mobil",
+            "szam": "06472356987"
+        }
+    ]
+}
