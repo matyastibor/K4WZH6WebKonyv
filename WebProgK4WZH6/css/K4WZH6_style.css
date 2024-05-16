@@ -233,3 +233,17 @@ input[type="email"], input[type="text"], input[type="date"], select, textarea {
     width:200px;
     padding: 5px;
 }
+
+#elkuldBtn {
+    background-color: #fb5000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer;
+    transition: all, 0.8s;    
+}
+
+#elkuldBtn:hover {
+    background-color: #222;       
+}
