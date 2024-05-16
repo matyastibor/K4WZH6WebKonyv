@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+    <head>
+
+        <title>Sóder-Kavics Depó</title>
+        <meta charset="utf-8">
+
+        <link href="css/K4WZH6_style.css" rel="stylesheet" type="text/css" />
+        <script src="jquery/jquery-3.7.1.js" type="text/javascript"></script>
+        <script src="js/load.js" type="text/javascript"></script>
+        
+
+        <style>
+            .mySlides {display:none;}
+        </style>
+        
+    </head>
+
+    <body>
+
+        <main>
+
+            <header>
+            
+            <nav>
+                <h1><span>Kavics</span>Depó</h1> 
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="cegunkrol.html">Cégünkről</a></li>
+                    <li><a href="szolgaltatasaink.html">Szolgaltatások</a></li>
+                    <li><a href="termekek.html">Termékek</a></li>
+                    <li><a href="elerhetosegek.html" class="active">Elérhetőségek</a></li>
+                </ul>
+            </nav>
+
+            <div class="slider-section">
+                <div class="mySlides">
+                    <img src="images/slide-1.jpg" style="width:100%">
+                    <div class="caption">
+                    Kulé kavics
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-2.jpg" style="width:100%">
+                    <div class="caption">
+                    OHK 0-4 térkőágyazó
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-3.jpg" style="width:100%">
+                    <div class="caption">
+                    Antracit
+                    </div>
+                </div> 
+                <div class="mySlides">
+                    <img src="images/slide-4.jpg" style="width:100%">
+                    <div class="caption">
+                    Sóder
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-5.jpg" style="width:100%">
+                    <div class="caption">
+                    Termőföld
+                    </div>
+                </div>
+                
+                <script>
+                    var myIndex = 0;  
+                    carousel();
+                    
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000); 
+                    }
+                </script>
+                
+            </div>
+            
+            
+            </header>
+
+            <section>
+                
+                <article>
+                    <h1>Elérhetőségek</h1>
+                    <p>Keressen bizalommal!</p>
+
+                    <div id="area">TERÜLET</div>
+
+                    <br><br>
+
+                    <form>
+                        <table>
+                            <tr>
+                                <td><b>Név*:</b></td>
+                                <td><input type="text" name="nev" id="nevIpt" required></td></tr>
+                            <tr>
+                                <td><b>Email*:</b></td>
+                                <td><input type="email" name="email" id="emailIpt" required></td></tr>
+                            <tr>
+                                <td><b>Telefon*:</b></td>
+                                <td><input type="text" name="telefon" id="telefonIpt" placeholder="+36 30 123 4567" required></td></tr>
+                            <tr>    
+                                <td><b>Üzenet*:</b></td>
+                                <td><textarea name="uzenet" id="uzenetIpt" required></textarea></td></tr>
+                            <tr>
+                                <td><b>Számlát kér*:</b></td><td>
+                                igen <input type="radio" name="szamla" id="szamla1Ipt" value="igen" checked="checked" required>
+                                nem  <input type="radio" name="szamla" id="szamla2Ipt" value="nem" required></td></tr>
+                            <tr>
+                                <td><b>Termék*:</b></td>
+                                <td>
+                                <select name="termek" id="termekIpt" required>
+                                    <option value="">-- Válasszon --</option>
+                                    <option>Sóder 0-24mm</option>
+                                    <option>Sóder 0-32mm</option>
+                                    <option>Osztályozott kavics 4-8mm</option>
+                                    <option>Osztályozott gyöngykavics 16-24mm</option>
+                                    <option>Kulékavics 24-63mm</option>
+                                </select></td></tr>
+                            <tr>
+                                <td><b>Kiszállítás dátuma*:</b></td>
+                                <td><input type="date" name="datum" id="datumIpt" required></td></tr>
+                            <tr>
+                                <td><b>Hírlevelet kérek:</b></td>
+                                <td><input type="checkbox" name="hirlevel" id="hiltevelIpt" value="1"></td></tr>
+                            <tr>
+                                <td colspan="2" align="right">
+                                    <input type="submit" value="Elküld" name="elkuld" id="elkuldBtn">
+                                </td>
+                            </tr>
+                        </table>
+                        <p>*: A csillaggal jelölt mezőket ne hagyja üresen.</p>
+                    </form>
+
+                </article>
+
+                <aside>
+                    <h1 class="text-center">Kapcsolódó linkek</h1>
+                    <ul>                        
+                        <li><a href="adatkezeles.html">Adatkezelési tájékoztató</a></li>
+                        <li><a href="sutikezeles.html">Süti (cookie) használati szabályzat</a></li>
+                        <li><a href="impresszum.html">Impresszum</a></li>
+                    </ul>  
+                </aside>
+
+            </section>
+
+            <div class="clearfix"></div>
+
+            <footer>
+                <p>Készítette: Mátyás Tibor | THE PTI Levelező</p>                
+            </footer>
+
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+    <head>
+
+        <title>Sóder-Kavics Depó</title>
+        <meta charset="utf-8">
+
+        <link href="css/K4WZH6_style.css" rel="stylesheet" type="text/css" />
+        <script src="jquery/jquery-3.7.1.js" type="text/javascript"></script>
+        <script src="js/K4WZH6.js" type="text/javascript"></script>
+
+        <style>
+            .mySlides {display:none;}
+            
+            table.termekleiras {
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+            .termekleiras th, td {
+            text-align: left;
+            padding: 5px 8px;
+            }
+
+            .termekleiras tr:nth-child(even) {background-color: #cdcdcd;}
+        </style>
+        
+    </head>
+
+    <body>
+
+        <main>
+
+            <header>
+            
+            <nav>
+                <h1><span>Kavics</span>Depó</h1> 
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="cegunkrol.html">Cégünkről</a></li>
+                    <li><a href="szolgaltatasaink.html">Szolgaltatások</a></li>
+                    <li><a href="termekek.html" class="active">Termékek</a></li>
+                    <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                </ul>
+            </nav>
+
+            <div class="slider-section">
+                <div class="mySlides">
+                    <img src="images/slide-1.jpg" style="width:100%">
+                    <div class="caption">
+                    Kulé kavics
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-2.jpg" style="width:100%">
+                    <div class="caption">
+                    OHK 0-4 térkőágyazó
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-3.jpg" style="width:100%">
+                    <div class="caption">
+                    Antracit
+                    </div>
+                </div> 
+                <div class="mySlides">
+                    <img src="images/slide-4.jpg" style="width:100%">
+                    <div class="caption">
+                    Sóder
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-5.jpg" style="width:100%">
+                    <div class="caption">
+                    Termőföld
+                    </div>
+                </div>
+                
+                <script>
+                    var myIndex = 0;  
+                    carousel();
+                    
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000); 
+                    }
+                </script>
+                
+            </div>
+            
+            
+            </header>
+
+            <section>
+                
+                <article>                    
+				
+                        <h1>SÓDER, KAVICS</h1>
+                        <h2>Rendelhető termékek</h2>
+
+                        <div class="termek">
+                            <div class="overlay"></div>
+                            <div class="termekar">10.500 Ft/m<sup>3</sup></div>
+                            <div class="termekkep"><img src="images/1.jpg"></div>
+                            <div class="termeknev">Sóder 0-24mm</div>
+                            <input type="button" value="Bővebben" class="bovebbenBtn" rel="1">
+                            <table class="termekleiras" id="leiras1">
+                                <tr>
+                                    <th colspan="2"><strong>Termékleírás</strong></th>
+                                </tr>
+                                <tr>
+                                    <td>Kiszerelés:</td>
+                                    <td>m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Fajlagos súly:</td>
+                                    <td>1600 kg/m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Szín:</td>
+                                    <td>szürke</td>
+                                </tr>
+                                <tr>
+                                    <td>Anyag:</td>
+                                    <td>homokos kavics</td>
+                                </tr>                                
+                            </table>
+                        </div>
+
+                        <div class="termek">
+                            <div class="overlay"></div>
+                            <div class="termekar">10.500 Ft/m<sup>3</sup></div>
+                            <div class="termekkep"><img src="images/2.jpg"></div>
+                            <div class="termeknev">Sóder 0-32mm</div>
+                            <input type="button" value="Bővebben" class="bovebbenBtn" rel="2">
+                            <table class="termekleiras" id="leiras2">
+                                <tr>
+                                    <th colspan="2"><strong>Termékleírás</strong></th>
+                                </tr>
+                                <tr>
+                                    <td>Kiszerelés:</td>
+                                    <td>m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Fajlagos súly:</td>
+                                    <td>1600 kg/m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Szín:</td>
+                                    <td>szürke</td>
+                                </tr>
+                                <tr>
+                                    <td>Anyag:</td>
+                                    <td>homokos kavics</td>
+                                </tr>
+                                <tr><td colspan="2">Természetes szemmegoszlású homokos kavics, amely 0 és 32 mm közötti főként kvarc és kvarci szemekből áll. Sódert az építőiparban, azon belül is betonozáshoz használják, de szemcsemérete dönti el, hogy pontosabban milyen munkákhoz alkalmazható.</td></tr>
+                            </table>
+                        </div>
+
+                        <div class="termek">
+                            <div class="overlay"></div>
+                            <div class="termekar">14.000 Ft/m<sup>3</sup></div>
+                            <div class="termekkep"><img src="images/3.jpg"></div>
+                            <div class="termeknev">Osztályozott kavics 4-8mm</div>
+                            <input type="button" value="Bővebben" class="bovebbenBtn" rel="3">
+                            <table class="termekleiras" id="leiras3">
+                                <tr>
+                                    <th colspan="2"><strong>Termékleírás</strong></th>
+                                </tr>
+                                <tr>
+                                    <td>Kiszerelés:</td>
+                                    <td>m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Fajlagos súly:</td>
+                                    <td>1500 kg/m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Szín:</td>
+                                    <td>szürke</td>
+                                </tr>
+                                <tr>
+                                    <td>Anyag:</td>
+                                    <td>homokos kavics</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="termek">
+                            <div class="overlay"></div>
+                            <div class="termekar">14.000 Ft/m<sup>3</sup></div>
+                            <div class="termekkep"><img src="images/4.jpg"></div>
+                            <div class="termeknev">Osztályozott gyöngykavics 16-24mm</div>
+                            <input type="button" value="Bővebben" class="bovebbenBtn" rel="4">
+                            <table class="termekleiras" id="leiras4">
+                                <tr>
+                                    <th colspan="2"><strong>Termékleírás</strong></th>
+                                </tr>
+                                <tr>
+                                    <td>Kiszerelés:</td>
+                                    <td>m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Fajlagos súly:</td>
+                                    <td>1500 kg/m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Szín:</td>
+                                    <td>barna-szürke-bézs-fehér-sárga kavicsok vegyesen</td>
+                                </tr>
+                                <tr>
+                                    <td>Anyag:</td>
+                                    <td>folyami kavics</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="termek">
+                            <div class="overlay"></div>
+                            <div class="termekar">11.500 Ft/m<sup>3</sup></div>
+                            <div class="termekkep"><img src="images/5.jpg"></div>
+                            <div class="termeknev">Kulékavics 24-63mm</div>
+                            <input type="button" value="Bővebben" class="bovebbenBtn" rel="5">
+                            <table class="termekleiras" id="leiras5">
+                                <tr>
+                                    <th colspan="2"><strong>Termékleírás</strong></th>
+                                </tr>
+                                <tr>
+                                    <td>Kiszerelés:</td>
+                                    <td>m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Fajlagos súly:</td>
+                                    <td>1450 kg/m<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Szín:</td>
+                                    <td>barna-szürke-bézs-fehér-sárga</td>
+                                </tr>
+                                <tr>
+                                    <td>Anyag:</td>
+                                    <td>folyami kavics</td>
+                                </tr>
+                            </table>
+                        </div>
+            
+            
+                </article>
+
+                <aside>
+                    <h1 class="text-center">Kapcsolódó linkek</h1>
+                    <ul>                        
+                        <li><a href="adatkezeles.html">Adatkezelési tájékoztató</a></li>
+                        <li><a href="sutikezeles.html">Süti (cookie) használati szabályzat</a></li>
+                        <li><a href="impresszum.html">Impresszum</a></li>
+                    </ul>   
+                </aside>
+
+            </section>
+
+            <div class="clearfix"></div>
+
+            <footer>
+                <p>Készítette: Mátyás Tibor | THE PTI Levelező</p>                
+            </footer>
+
+        </main>
+
+    </body>
+</html>

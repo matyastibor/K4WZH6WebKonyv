@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+    <head>
+
+        <title>Sóder-Kavics Depó</title>
+        <meta charset="utf-8">
+
+        <link href="css/K4WZH6_style.css" rel="stylesheet" type="text/css" />
+        <script src="jquery/jquery-3.7.1.js" type="text/javascript"></script>
+        
+        <style>
+            .mySlides {display:none;}
+        </style>
+        
+    </head>
+
+    <body>
+
+        <main>
+
+            <header>
+            
+            <nav>
+                <h1><span>Kavics</span>Depó</h1> 
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="cegunkrol.html" class="active">Cégünkről</a></li>
+                    <li><a href="szolgaltatasaink.html">Szolgaltatások</a></li>
+                    <li><a href="termekek.html">Termékek</a></li>
+                    <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                </ul>
+            </nav>
+
+            <div class="slider-section">
+                <div class="mySlides">
+                    <img src="images/slide-1.jpg" style="width:100%">
+                    <div class="caption">
+                    Kulé kavics
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-2.jpg" style="width:100%">
+                    <div class="caption">
+                    OHK 0-4 térkőágyazó
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-3.jpg" style="width:100%">
+                    <div class="caption">
+                    Antracit
+                    </div>
+                </div> 
+                <div class="mySlides">
+                    <img src="images/slide-4.jpg" style="width:100%">
+                    <div class="caption">
+                    Sóder
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/slide-5.jpg" style="width:100%">
+                    <div class="caption">
+                    Termőföld
+                    </div>
+                </div>
+                
+                <script>
+                    var myIndex = 0;  
+                    carousel();
+                    
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000); 
+                    }
+                </script>
+                
+            </div>
+            
+            
+            </header>
+
+            <section>
+                
+                <article>
+                    <div class="col-sm-12">
+                        <img src="images/rolunk.jpg" style="float:right;width:30%;">
+                        <h1 class="heading-style-1 visible-first">Rólunk</h1><div><br></div>
+                        
+                        <div>Célunk, hogy minőségi terméket és egyre bővülő árukészletet biztosítson megrendelői számára.</div>
+                        
+                        <div>Komplex szolgáltatásunk közé tartozik: Ömlesztett áruk értékesítése, Szállítás, Gépi földmunka, Gépi rakodás, Tereprendezés.</div>
+                        
+                        <div>Munkavégzésünkre jellemző a feladatok pontos elvégzése, rugalmasság, a határidők pontos betartása.</div> 
+                        
+                        <div><br></div><div>Vállalkozásunk áll rendelkezésére magánszemélyeknek és a közületeknek az alapásástól az épületbontásig minden földmunka végzéssel kapcsolatos területen. Földmunkáink során ügyfeleink igényeknek megfelelően különböző gépekkel dolgozunk.</div><div><br></div>
+                        
+                        <div>Vállaljuk építkezés előtti, közbeni, és utáni tereprendezést, területtisztítást. Különböző munkagépekkel, kisteljesítményű gépektől kezdve egészen a nagyteljesítményű kotrógépekig. Alapos felmérést követően, az alapok, sávalapok, kerítésalapok kiásását kisgépekkel, tapasztalt gépkezelőkkel végezzük. Árokásást, és csatornaásást több féle kanálmérettel végezzük. Építkezés befejezését követően is vállalunk közműárkok kiásását.</div><div><br></div>
+                        <div>Főbb célunk közé tartozik, hogy megrendelőink számára cégünk neve és szakértelme garanciát jelentsen a megbízható, magas színvonalú szolgáltatás tekintetében.</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div>
+                        </div>
+                </article>
+
+                <aside>
+                    <h1 class="text-center">Kapcsolódó linkek</h1>
+                    <ul>                        
+                        <li><a href="adatkezeles.html">Adatkezelési tájékoztató</a></li>
+                        <li><a href="sutikezeles.html">Süti (cookie) használati szabályzat</a></li>
+                        <li><a href="impresszum.html">Impresszum</a></li>
+                    </ul>  
+                </aside>
+
+            </section>
+
+            <div class="clearfix"></div>
+
+            <footer>
+                <p>Készítette: Mátyás Tibor | THE PTI Levelező</p>                
+            </footer>
+
+        </main>
+
+    </body>
+</html>

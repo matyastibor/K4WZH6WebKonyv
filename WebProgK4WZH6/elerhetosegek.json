@@ -1,0 +1,20 @@
+{
+    "cim": 
+    {
+        "iranyitoszam": 4026,
+        "varos": "Debrecen",
+        "utca": "Harsona u. 10."
+    },
+
+    "telefonszam":
+    [
+        {
+            "tipus": "Vezetékes",
+            "szam": "0647123456"
+        },
+        {
+            "tipus": "Mobil",
+            "szam": "06472356987"
+        }
+    ]
+}
